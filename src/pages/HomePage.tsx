@@ -1,11 +1,12 @@
 import HERO_IMAGE from "../assets/images/LOPTOP_HERO_IMAGE.png";
+import Section2 from "../components/section2/Section2";
 
 export default function HomePage() {
   return (
-    <main className="w-full mx-[auto] lg:mt-[8rem] px-2">
-      <section className="grid lg:grid-cols-2 lg:pb-[4rem] items-center">
+    <main className=" lg:mt-[8rem] ">
+      <section className="grid lg:grid-cols-2 lg:pb-[4rem] items-center ">
         <div className="">
-          <fieldset className=" border-t-orange-400 border-y-[1rem] lg:border-y-[2rem] border-double border text-xl lg:text-4xl font-medium  rounded-[30%]">
+          <fieldset className=" border-t-orange-400 border-y-[1rem] lg:border-y-[2rem] border-b-transparent border-r-transparent border-l-transparent  border-double border text-xl lg:text-4xl font-medium  rounded-md">
             <legend className="font-bold text-green-600 text-2xl lg:text-5xl ">
               HEXADEV
             </legend>
@@ -30,9 +31,16 @@ export default function HomePage() {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-center border-2 border-t-transparent border-l-transparent border-r-transparent w-full border-b-green-400">
+        <div className="flex items-center justify-center flex-col">
           <img src={HERO_IMAGE} alt="hero image" className="lg:w-[80%] " />
+          <span className="border-2 border-orange-500 lg:px-12 text-lg font-semibold rounded-lg py-2 text-green-500">
+            Boosted with seo to attract customers.
+          </span>
         </div>
+      </section>
+      {/* second section */}
+      <section className="bg-white">
+        <Section2 />
       </section>
     </main>
   );

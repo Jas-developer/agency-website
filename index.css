@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: rgb(216, 227, 238);
+}
+
 * {
   margin: 0;
-  overflow-x: hidden;
+  padding: 0;
 }

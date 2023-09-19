@@ -2,7 +2,7 @@ import AllRoutes from "./AllRoutes";
 
 export default function App() {
   return (
-    <main className="lg:px-24 m-0">
+    <main className="lg:px-24 px-2">
       <AllRoutes />
     </main>
   );
