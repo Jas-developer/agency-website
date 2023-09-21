@@ -7,23 +7,22 @@ export default function HomePage() {
     <main className=" lg:mt-[8rem] ">
       <section className="grid lg:grid-cols-2 lg:pb-[4rem] items-center lg:px-24 px-2 ">
         <div className="">
-          <fieldset className="border-color border-t-green-700 border-y-[1rem] overflow-clip lg:border-y-[2rem] border-b-transparent border-r-transparent border-l-transparent  border-double border text-xl lg:text-4xl font-medium  rounded-md">
+          <fieldset className="border-color border-t-green-700 border-y-[1rem] overflow-clip lg:border-y-[2rem] border-b-transparent border-r-transparent border-l-transparent  border-double border text-lg lg:text-4xl font-medium  rounded-md">
             <legend className="font-bold   text-[#ff5e00] text-2xl lg:text-5xl overflow-clip">
               HEXADEV
             </legend>
-            <h1 className="mt-2">
-              PROVIDE SOFTWARE SOLUTIONS FOR YOUR BUSINESS
-            </h1>
           </fieldset>
-          <div className="prose prose-md lg:prose-xl ">
-            <p>
-              We specialize in creating software tailored to your business
-              needs, whether it's streamlining operations, enhancing customer
-              experiences, or boosting efficiency.
+          <span className="lg:text-3xl font-semibold">
+            PROVIDE SOFTWARE SOLUTIONS FOR YOUR BUSINESS
+          </span>
+          <div className="prose prose-md   lg:text-start lg:prose-2xl mt-5 lg:mt-12">
+            <p className="strong">
+              We specialize in creating software for business needs, enhancing
+              customer experiences, or boosting efficiency.
             </p>
-            <p>
-              Partner with us to unlock your business's full potential through
-              technology. Contact us today to get started.
+            <p className="">
+              Unlock your business's full potential through technology. Contact
+              us today to get started.
             </p>
           </div>
           <div className="mt-2">
