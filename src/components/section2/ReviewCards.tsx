@@ -1,18 +1,18 @@
+import "../../styles/Floating.css";
+
 export default function ReviewCard() {
   return (
-    <div>
-      <div className="bg-gray-800 text-white max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl m-5 hover:shadow-2xl hover:bg-black transition-all duration-500 ease-in-out">
+    <div className="flex justify-center">
+      <div className=" background-color floating    text-white max-w-md mx-auto rounded-lg  shadow-md overflow-hidden md:max-w-2xl m-5 hover:shadow-2xl bg-black transition-all duration-500 ease-in-out">
         <div className="md:flex">
-          <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Hello!
+          <div className="lg:p-8 p-4">
+            <div className="uppercase tracking-wide text-sm text-orange-500 font-semibold">
+              Excellence
             </div>
-            <p className="block mt-1 text-lg leading-tight font-medium text-white">
-              Hover Me (Love You Guys)
-            </p>
-            <p className="mt-2 text-gray-400">
-              You're a monster. I can swallow a bottle of alcohol and I'll feel
-              like Godzilla. Better hit the deck like the card dealer.
+            <p className="block mt-1 text-lg leading-tight font-medium text-white"></p>
+            <p className="mt-2 text-gray-200">
+              We take pride in doing things well. All our work is done with the
+              best quality possible.
             </p>
           </div>
         </div>

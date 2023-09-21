@@ -1,0 +1,132 @@
+.floating {
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* float effect for image */
+
+.floating-img {
+  transform: translateY(-10%);
+  animation: floater 10s;
+  transition: ease-out 5s;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease-in 0.5s;
+  }
+  20% {
+    transform: translateY(10%);
+    transition: ease-out 0.5s;
+  }
+}
+
+/* BUTTON STYLE */
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(-12.74%, rgba(8, 222, 12, 0.5)),
+    color-stop(56.76%, rgba(15, 218, 59, 0.271))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(16, 220, 70, 0.5) -12.74%,
+    rgba(27, 214, 21, 0.271) 56.76%
+  );
+  border: 2px solid #11d024;
+  color: #df9921;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button:before {
+  content: "";
+  width: 4px;
+  height: 28px;
+  background: #19173b;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  bottom: -7px;
+  left: 4px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #1cc30d;
+}
+
+/* background */
+.background-color {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(-12.74%, rgba(8, 222, 12, 0.5)),
+    color-stop(56.76%, rgba(15, 218, 59, 0.271))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(16, 220, 70, 0.5) -12.74%,
+    rgba(27, 214, 21, 0.271) 56.76%
+  );
+}
+
+/* hexa dev text-style */
+
+.border-color {
+  border-style: solid;
+  border-color: linear-gradient(
+      90deg,
+      rgba(16, 220, 70, 0.5) -12.74%,
+      rgba(27, 214, 21, 0.271) 56.76%
+    )
+    1; /* The '1' here specifies that the gradient should cover the entire border */
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */

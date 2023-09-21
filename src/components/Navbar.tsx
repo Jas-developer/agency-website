@@ -12,8 +12,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="grid lg:grid-cols-5 text-lg font-medium text-gray-800 lg:mt-2">
-      <div className="flex justify-between x-2 px-2 mt-2">
+    <header className="grid lg:grid-cols-5 text-lg font-medium text-gray-800 lg:mt-2 lg:px-24 px-2 ">
+      <div className="flex justify-between x-2 px-2 mt-2 ">
         logo
         <button onClick={handleOpenOrClose} className="lg:hidden">
           {open === true ? (
@@ -86,7 +86,13 @@ export default function Navbar() {
           </button>
         </Link>
       </div>
-      <div className="border-2 shadow-lg lg:border-transparent border-t-transparent border-l-transparent border-r-transparent  border-b-gray-400">
+      <div
+        className={`${
+          open === true
+            ? `border-2 border-black shadow-lg lg:border-transparent border-t-transparent border-l-transparent border-r-transparent  border-b--700`
+            : ""
+        }`}
+      >
         <div
           className={`${
             open === true
@@ -147,7 +153,7 @@ export default function Navbar() {
               }}
               className={` rounded-sm lg:ml-12 px-2  py-1 ${
                 currentNavigation === "CONTACT"
-                  ? `border-b-2 border-green-500`
+                  ? `border-b-2 border-green-500 background-color`
                   : ``
               }`}
             >
