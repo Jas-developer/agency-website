@@ -129,4 +129,10 @@
   border: none;
 }
 
-/* button styling */
+/* background-image */
+.background-image {
+  background-image: url("../assets/images/LOPTOP_HERO_IMAGE.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  object-fit: fill;
+}

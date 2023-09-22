@@ -12,12 +12,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="grid lg:grid-cols-5 text-lg font-medium text-gray-800 lg:mt-2 lg:px-24 px-2 ">
+    <header className="grid lg:grid-cols-5 text-lg font-medium text-gray-100 lg:mt-2 md:px-12 lg:px-24 px-2 ">
       <div className="flex justify-between x-2 px-2 mt-2 ">
         logo
         <button onClick={handleOpenOrClose} className="lg:hidden">
           {open === true ? (
-            <div className="border border-gray-600 px-2 rounded text-gray-800 font-semibold">
+            <div className="border border-gray-600 px-2 rounded text-gray-100 font-semibold">
               X
             </div>
           ) : (
@@ -89,7 +89,7 @@ export default function Navbar() {
       <div
         className={`${
           open === true
-            ? `border-2 border-black shadow-lg lg:border-transparent border-t-transparent border-l-transparent border-r-transparent  border-b--700`
+            ? `border-2 border-gray-100 shadow-lg lg:border-transparent border-t-transparent border-l-transparent border-r-transparent  border-b--700`
             : ""
         }`}
       >
