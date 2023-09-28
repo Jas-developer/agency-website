@@ -2,7 +2,7 @@ import HERO_IMAGE from "../assets/images/LOPTOP_HERO_IMAGE.png";
 import Section2 from "../components/section2/Section2";
 import "../styles/Floating.css";
 import BG_HERO_IMAGE from "../assets/images/BG_HERO_IMAGE.jpg";
-
+import { Link } from "react-router-dom";
 export default function HomePage() {
   return (
     <main className=" lg:mt-[2rem] relative font-serif ">
@@ -39,9 +39,11 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-2 flex items-center  lg:justify-start">
-              <button className="lg:px-8 lg:p-2 px-4 p-1 rounded-sm shadow-l bg-black button text-white font-semibold  overflow-clip">
-                Get Started
-              </button>
+              <Link to="/getstarted">
+                <button className="lg:px-8 lg:p-2 px-4 p-1 rounded-sm shadow-l bg-black button text-white font-semibold  overflow-clip">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>

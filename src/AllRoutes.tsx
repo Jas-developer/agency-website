@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Services from "./pages/Services";
 import Navbar from "./components/Navbar";
+import GetStarted from "./pages/GetStarted";
 export default function AllRoutes() {
   return (
     <Router>
@@ -13,6 +14,7 @@ export default function AllRoutes() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/service" element={<Services />} />
+        <Route path="/getstarted" element={<GetStarted />} />
       </Routes>
     </Router>
   );
